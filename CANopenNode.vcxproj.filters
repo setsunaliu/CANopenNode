@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CANopen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="example\application.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="example\CO_OD.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="example\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="example\co_od_with_trace\CO_OD.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\CO_Emergency.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\CO_HBconsumer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\CO_NMT_Heartbeat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\CO_PDO.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\CO_SDO.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\CO_SDOmaster.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\CO_SYNC.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\CO_trace.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\crc16-ccitt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\drvtemplate\CO_driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\drvtemplate\eeprom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\dspic30f\CO_driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\ecos\application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\ecos\ecos_helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\ecos\CO_driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\ecos\CO_Flash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\ecos\CO_PollingTimer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\ecos\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\lpc1768\CO_driver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\lpc177x_8x\application.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\lpc177x_8x\CANOpenTask.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\lpc177x_8x\CO_driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\mcf5282\CO_driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\pic24_dspic33\CO_driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\pic32\CO_driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\pic32\eeprom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\pic32\main_PIC32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\sam3x\CO_driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\sam3x\CO_Flash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\socketcan\CO_driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\socketcan\CO_Linux_tasks.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\socketcan\CO_OD_storage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\stm32\CO_driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\stm32f3\CO_driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\stm32f3\CO_Flash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CANopen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="example\application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="example\CO_OD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="example\co_od_with_trace\CO_OD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\CO_Emergency.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\CO_HBconsumer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\CO_NMT_Heartbeat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\CO_PDO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\CO_SDO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\CO_SDOmaster.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\CO_SYNC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\CO_trace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\crc16-ccitt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\drvtemplate\CO_driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\drvtemplate\eeprom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\dspic30f\CO_driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\ecos\CO_driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\ecos\CO_Flash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\ecos\CO_PollingTimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\ecos\ecos_helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\lpc1768\CO_CAN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\lpc1768\CO_driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\lpc177x_8x\application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\lpc177x_8x\CANOpenTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\lpc177x_8x\CO_driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\mcf5282\CO_driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\pic24_dspic33\CO_driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\pic32\CO_driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\pic32\eeprom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\sam3x\CO_driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\sam3x\CO_Flash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\socketcan\CO_driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\socketcan\CO_Linux_tasks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\socketcan\CO_OD_storage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\stm32\CO_driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\stm32f3\CO_driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\stm32f3\CO_Flash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="example\IO.html" />
+    <None Include="example\_project.html" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{7AA508DA-D546-4BB8-946B-50DC6EB76106}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CANopen.c" />
+    <ClCompile Include="example\application.c" />
+    <ClCompile Include="example\CO_OD.c" />
+    <ClCompile Include="example\co_od_with_trace\CO_OD.c" />
+    <ClCompile Include="example\main.c" />
+    <ClCompile Include="stack\CO_Emergency.c" />
+    <ClCompile Include="stack\CO_HBconsumer.c" />
+    <ClCompile Include="stack\CO_NMT_Heartbeat.c" />
+    <ClCompile Include="stack\CO_PDO.c" />
+    <ClCompile Include="stack\CO_SDO.c" />
+    <ClCompile Include="stack\CO_SDOmaster.c" />
+    <ClCompile Include="stack\CO_SYNC.c" />
+    <ClCompile Include="stack\CO_trace.c" />
+    <ClCompile Include="stack\crc16-ccitt.c" />
+    <ClCompile Include="stack\drvtemplate\CO_driver.c" />
+    <ClCompile Include="stack\drvtemplate\eeprom.c" />
+    <ClCompile Include="stack\dspic30f\CO_driver.c" />
+    <ClCompile Include="stack\ecos\application.cpp" />
+    <ClCompile Include="stack\ecos\CO_driver.c" />
+    <ClCompile Include="stack\ecos\CO_Flash.c" />
+    <ClCompile Include="stack\ecos\CO_PollingTimer.c" />
+    <ClCompile Include="stack\ecos\ecos_helper.cpp" />
+    <ClCompile Include="stack\ecos\main.c" />
+    <ClCompile Include="stack\lpc1768\CO_driver.cpp" />
+    <ClCompile Include="stack\lpc177x_8x\application.c" />
+    <ClCompile Include="stack\lpc177x_8x\CANOpenTask.c" />
+    <ClCompile Include="stack\lpc177x_8x\CO_driver.c" />
+    <ClCompile Include="stack\mcf5282\CO_driver.c" />
+    <ClCompile Include="stack\pic24_dspic33\CO_driver.c" />
+    <ClCompile Include="stack\pic32\CO_driver.c" />
+    <ClCompile Include="stack\pic32\eeprom.c" />
+    <ClCompile Include="stack\pic32\main_PIC32.c" />
+    <ClCompile Include="stack\sam3x\CO_driver.c" />
+    <ClCompile Include="stack\sam3x\CO_Flash.c" />
+    <ClCompile Include="stack\socketcan\CO_driver.c" />
+    <ClCompile Include="stack\socketcan\CO_Linux_tasks.c" />
+    <ClCompile Include="stack\socketcan\CO_OD_storage.c" />
+    <ClCompile Include="stack\stm32f3\CO_driver.c" />
+    <ClCompile Include="stack\stm32f3\CO_Flash.c" />
+    <ClCompile Include="stack\stm32\CO_driver.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CANopen.h" />
+    <ClInclude Include="example\application.h" />
+    <ClInclude Include="example\CO_OD.h" />
+    <ClInclude Include="example\co_od_with_trace\CO_OD.h" />
+    <ClInclude Include="stack\CO_Emergency.h" />
+    <ClInclude Include="stack\CO_HBconsumer.h" />
+    <ClInclude Include="stack\CO_NMT_Heartbeat.h" />
+    <ClInclude Include="stack\CO_PDO.h" />
+    <ClInclude Include="stack\CO_SDO.h" />
+    <ClInclude Include="stack\CO_SDOmaster.h" />
+    <ClInclude Include="stack\CO_SYNC.h" />
+    <ClInclude Include="stack\CO_trace.h" />
+    <ClInclude Include="stack\crc16-ccitt.h" />
+    <ClInclude Include="stack\drvtemplate\CO_driver.h" />
+    <ClInclude Include="stack\drvtemplate\eeprom.h" />
+    <ClInclude Include="stack\dspic30f\CO_driver.h" />
+    <ClInclude Include="stack\ecos\CO_driver.h" />
+    <ClInclude Include="stack\ecos\CO_Flash.h" />
+    <ClInclude Include="stack\ecos\CO_PollingTimer.h" />
+    <ClInclude Include="stack\ecos\ecos_helper.h" />
+    <ClInclude Include="stack\lpc1768\CO_CAN.h" />
+    <ClInclude Include="stack\lpc1768\CO_driver.h" />
+    <ClInclude Include="stack\lpc177x_8x\application.h" />
+    <ClInclude Include="stack\lpc177x_8x\CANOpenTask.h" />
+    <ClInclude Include="stack\lpc177x_8x\CO_driver.h" />
+    <ClInclude Include="stack\mcf5282\CO_driver.h" />
+    <ClInclude Include="stack\pic24_dspic33\CO_driver.h" />
+    <ClInclude Include="stack\pic32\CO_driver.h" />
+    <ClInclude Include="stack\pic32\eeprom.h" />
+    <ClInclude Include="stack\sam3x\CO_driver.h" />
+    <ClInclude Include="stack\sam3x\CO_Flash.h" />
+    <ClInclude Include="stack\socketcan\CO_driver.h" />
+    <ClInclude Include="stack\socketcan\CO_Linux_tasks.h" />
+    <ClInclude Include="stack\socketcan\CO_OD_storage.h" />
+    <ClInclude Include="stack\stm32f3\CO_driver.h" />
+    <ClInclude Include="stack\stm32f3\CO_Flash.h" />
+    <ClInclude Include="stack\stm32\CO_driver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="example\IO.html" />
+    <None Include="example\_project.html" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
